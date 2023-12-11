@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title> Sum of the First Nth Numbers Program </title>
+
+
+<h1>This is a Sum of the First Nth Numbers Program</h1>
+
+
+
+
+<label for="nth">Enter number: </label>
+<input id="nth" type="number"></input>
+
+
+<button id="btnsum"> SHOW NUMBERS: </button>
+
+
+<br> <br>
+
+
+<h3 id = "comment"></h3>
+
+
+<br> <br>
+
+
+<a href ="index.html">Back to Homepage</a>
+
+
+<br> <br>
+
+
+<script>
+
+
+document.getElementById("btnsum").addEventListener("click", () =>
+{
+ var nth, sum, i;
+       nth = document.getElementById("nth").value*1;
+       i = 1;
+       sum = 0;
+
+
+       do{
+       sum += i;
+       i++;
+       }
+       while(i<=nth);
+
+
+       document.getElementById("comment").innerHTML="The sum of the nth numbers is: "
+           + sum;
+
+
+});
+</script>
+
+
+</body>
+</html>
