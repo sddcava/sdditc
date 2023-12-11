@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Sum of the First Nth Numbers Program</title>
+<style>
+body {
+font-family: "Lato", sans-serif;
+background-color: lightgray;
+}
+.mySlides {display: none;}
+</style>
+</head>
+<body>
+<h1>This is a Sum of the First Nth Numbers Program</h1>
+<label for="nth">Enter number:</label>
+<input id="nth" type="number">
+<button id="btnaverage">SHOW NUMBERS</button>
+<br><br>
+<h3 id="comment"></h3>
+<br><br>
+<a href="index.html">Back to Homepage</a>
+<br><br>
+
+
+<script>
+
+
+
+
+document.getElementById("btnaverage").addEventListener("click", () =>
+{
+       var nth = parseInt(document.getElementById("nth").value);
+       var sum = 0;
+       var average = 0;
+
+
+       for (var i = 1; i <= nth; i++) {
+           sum += i;
+       }
+       average = sum/nth;
+
+
+   document.getElementById("comment").innerHTML="The average of the nth numbers is: " + average;
+
+
+} );
+
+
+</script>
+
+
+</body>
+</html>
