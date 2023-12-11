@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title> Fahrenheit to Celcius Converter
+</title>
+<body>
+
+
+<h2> This is a temperature converter </h2>
+
+
+<br>
+<label for="temp">Temp in Fahrenheit: </label>
+<input id="temp" type="number">
+
+
+
+
+<button onclick="computetemp()">Convert</button>
+<br>
+
+
+<br>
+<label for="Celcius">Celcius: </label>
+<input id="Celcius" type="number" readonly>
+
+
+<br>
+<h1 id = "comment"></h1>
+<br>
+<a href ="index.html">Back to Homepage</a>
+<br>
+<script>
+   function computetemp()
+   {
+   var f, c
+   f = document.getElementById("temp").value*1;
+
+
+   c = (f-32)*(5/9);
+
+
+   document.getElementById("Celcius").value=c;
+   }
+</script>
+
+
+</body>
+</html>
