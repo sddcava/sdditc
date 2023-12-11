@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+
+<title> Feet to Meter Converter </title>
+
+
+</head>
+
+
+<body>
+
+
+<h2> This is a Feet to Meter converter </h2>
+
+
+<br>
+
+
+<label for="feet">Measurement in Feet: </label>
+<input id="feet" type="number">
+
+
+<button onclick="computemeter()">Convert</button>
+
+
+<br>
+<br>
+
+
+<label for="meter">Meters: </label>
+<input id="meter" type="number" readonly>
+
+
+<br>
+
+
+<h1 id = "comment"></h1>
+
+
+<br>
+
+
+<a href ="index.html">Back to Homepage</a>
+
+
+<br>
+
+
+<script>
+
+
+   function computemeter()
+   {
+   var f, m
+   f = document.getElementById("feet").value*1;
+
+
+   m = f*0.3048;
+
+
+   document.getElementById("meter").value=m;  
+   }
+
+
+</script>
+
+
+</body>
+
+
+</html>
