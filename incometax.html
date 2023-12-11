@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title> Income Tax Calculator Program </title>
+
+
+
+
+<h1>This is an Income Tax Calculator</h1>
+
+
+
+
+<label for="income">Income: </label>
+<input id="income" type="number">
+
+
+<button onclick="incometax()"> SOLVE </button>
+
+
+<br> <br>
+
+
+<label for="taxableincome">Income Tax: </label>
+<input id="taxableincome" type="number" readonly>
+
+
+<br> <br>
+
+
+<a href ="index.html">Back to Homepage</a>
+
+
+<script>
+function incometax()
+{
+ var income, incometax, it;
+ income = document.getElementById("income").value*1;
+ incometax = document.getElementById("taxableincome").value*1;
+  
+   if (income<250000 ) it='A'
+   else if (income >= 250000 && income < 400000) it='B'
+   else if (income >=400000 && income < 800000) it = 'C'
+   else if (income >=800000 && income < 2000000) it = 'D'
+   else if (income >=2000000 && income < 8000000) it = 'E'
+   else it = 'F'
+    
+   switch(it)
+   {
+     case 'A': incometax = 0;
+               break;
+
+
+     case 'B': incometax = (income-250000)*0.2;
+               break;
+
+
+     case 'C': incometax = ((income-400000)*0.25)+30000;
+               break;
+
+
+     case 'D': incometax = ((income-800000)*0.30)+130000;
+               break;
+
+
+     case 'E': incometax = ((income-2000000)*0.32)+490000;
+               break;
+
+
+     case 'F': incometax = ((income-8000000)*0.35)+2410000;
+               break;
+   }
+
+
+ document.getElementById("taxableincome").value=incometax;
+}
+</script>
+
+
+</body>
+</html>
