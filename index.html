@@ -35,6 +35,7 @@ padding: 10px;
 </style>
 <body>
 
+
 <!-- Navbar -->
 <div class="w3-top">
  <div class="w3-bar w3-black w3-card">
@@ -44,7 +45,7 @@ padding: 10px;
    <div class="w3-dropdown-hover w3-hide-small">
      <button class="w3-padding-large w3-button" title="More">Assignment 1 <i class="fa fa-caret-down"></i></button>    
           <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="say-hello.html"  class="w3-bar-item w3-button">Say Hello</a>
+            <a href="say-hello.html"  class="w3-bar-item w3-button">Hello</a>
             <a href="add2no.html" class="w3-bar-item w3-button">Add 2 numbers</a>
             <a href="gradecomputation.html" class="w3-bar-item w3-button">Grade Computation</a>
             <a href="celcius.html" class="w3-bar-item w3-button">Celsius to Fahrenheit</a>
@@ -55,16 +56,20 @@ padding: 10px;
        </div>
 
 
+
+
    <div class="w3-dropdown-hover w3-hide-small">
-       <button class="w3-padding-large w4-button" title="More">Assignment 2 <i class="fa fa-caret-down"></i></button>    
+       <button class="w3-padding-large w3-button" title="More">Assignment 2 <i class="fa fa-caret-down"></i></button>    
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
                <a href="incometax.html" class="w3-bar-item w3-button">Income Tax Calculator </a>
          </div>
        </div>
 
 
+
+
   <div class="w3-dropdown-hover w3-hide-small">
-       <button class="w3-padding-large w4-button" title="More">Assignment 3 <i class="fa fa-caret-down"></i></button>    
+       <button class="w3-padding-large w3-button" title="More">Assignment 3 <i class="fa fa-caret-down"></i></button>    
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
                <a href="nthfactorial.html" class="w3-bar-item w3-button">Factorial - Using While Loop </a>
                <a href="sumnthnumber.html" class="w3-bar-item w3-button">Sum - Using Do While Loop</a>
@@ -74,16 +79,20 @@ padding: 10px;
 
 
   <div class="w3-dropdown-hover w3-hide-small">
-       <button class="w3-padding-large w4-button" title="More">Assignment 4 <i class="fa fa-caret-down"></i></button>    
+       <button class="w3-padding-large w3-button" title="More">Assignment 4 <i class="fa fa-caret-down"></i></button>    
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
-               <a href="1" class="w3-bar-item w3-button">Simple Payroll </a>
-              
+               <a href="simple-payroll.html" class="w3-bar-item w3-button">Simple Payroll </a>
+             
          </div>
        </div>
 
 
+
+
  </div>
 </div>
+
+
 
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
@@ -92,30 +101,35 @@ padding: 10px;
 </div>
 
 
+
+
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
 
+
+
   <!-- The Band Section -->
- <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-   <h2 class="w3-wide">CS 1130 - Introduction to Computing</h2>
+ <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1000px" id="band">
+   <h2 class="w3-wide" style="font-family: 'Fredoka';font-size: 50px; text-align: left;"><b>CS 1130 - Introduction to Computing<b></h2>
     <br>
-    <h2>
-    Student Assignments: 
-    </h2>
+    <h2 style="font-family: 'Fredoka';font-size: 30px; text-align: left;"><b>
+    Student Assignments:
+    <b></h2>
      <br>
-     <h3>Assignment #1 - Conversion (Celsius to Fahrenheit, Fahrenheit to Celsius, Meters to Feet, Feet to Meters)</h3>
-     <h3>Assignment #2 - Income Tax Calculator </h3>
-     <h3>Assignment #3 - Factorial (While Loop), Sum (Do While Loop) and Average (For Loop) of First N Natural Numbers</h3>
-     <h3>Assignment #4 - Simple Payroll </h3>
+     <h3 style="font-family: 'Fredoka';font-size: 22px; text-align: left;"><b>Assignment #1</b> - Conversion (Celsius to Fahrenheit, Fahrenheit to Celsius, Meters to Feet, Feet to Meters)</h3>
+     <br>
+     <h3 style="font-family: 'Fredoka';font-size: 22px; text-align: left;"><b>Assignment #2</b> - Income Tax Calculator </h3>
+     <br>
+     <h3 style="font-family: 'Fredoka';font-size: 22px; text-align: left;"><b>Assignment #3</b> - Factorial (While Loop), Sum (Do While Loop) and Average (For Loop) of First N Natural Numbers</h3>
+     <br>
+     <h3 style="font-family: 'Fredoka';font-size: 22px; text-align: left;"><b>Assignment #4</b> - Simple Payroll </h3>
+
+
 
 
      <br>
-     
-
-
-
-
+   
  </div>
 
 
@@ -123,23 +137,26 @@ padding: 10px;
 </div>
 
 
+
+
 <script>
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
 
-
 function carousel() {
  var i;
  var x = document.getElementsByClassName("mySlides");
  for (i = 0; i < x.length; i++) {
-   x[i].style.display = "none"; 
+   x[i].style.display = "none";
  }
  myIndex++;
- if (myIndex > x.length) {myIndex = 1}   
- x[myIndex-1].style.display = "block"; 
- setTimeout(carousel, 4000);   
+ if (myIndex > x.length) {myIndex = 1}  
+ x[myIndex-1].style.display = "block";
+ setTimeout(carousel, 4000);  
 }
+
+
 
 
 // Used to toggle the menu on small screens when clicking on the menu button
@@ -153,6 +170,8 @@ function myFunction() {
 }
 
 
+
+
 // When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
@@ -161,7 +180,6 @@ window.onclick = function(event) {
  }
 }
 </script>
-
 
 </body>
 </html>
